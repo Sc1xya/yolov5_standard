@@ -1,0 +1,7 @@
+path: ${PROJECT_ROOT}/data/datasets
+train: kitti_origin/images/train  # 6000 images
+val: kitti_origin/images/val  # 1481 images
+
+# Classes
+nc: 7  # number of classes
+names: ['Car', 'Cyclist', 'Pedestrian', 'Truck', 'Van', 'Tram', 'Person_sitting']

@@ -1,0 +1,19 @@
+global:
+  model_name: yolov5
+  classes: ['Car', 'Cyclist', 'Pedestrian', 'Truck', 'Van', 'Tram', 'Person_sitting']
+  label_dict:
+    '0': 'Car'
+    '1': 'Cyclist'
+    '2': 'Pedestrain'
+    '3': 'Truck'
+    '4': 'Van'
+    '5': 'Tram'
+    '6': 'Person_sitting'
+train:
+  epochs: 10
+  batch_size: 16
+  img_size: 640
+  device: cpu
+  data: ${PROJECT_ROOT}/config/kitti.yaml
+  cfg: ${PROJECT_ROOT}/config/yolov5s.yaml
+  weights: ${PROJECT_ROOT}/models/yolov5s.pt
