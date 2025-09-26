@@ -2,7 +2,6 @@ import os
 import yaml
 from yolov5 import train
 
-#获取项目根目录路径
 project_root = os.environ.get('PROJECT_ROOT')
 if not project_root:
     raise ValueError("Environment variable PROJECT_ROOT is not set.")
